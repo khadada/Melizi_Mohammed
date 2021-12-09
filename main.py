@@ -13,8 +13,9 @@ root['background'] = win_bg_color
 # -----------------------------------------
 # ----------- Variable --------------------
 #------------------------------------------
-title_font = ("Traditional Arabic",48,'bold')
-sub_title = ("Algerian",20,'bold')
+title_font = ("Dubai",48,'bold')
+sub_title = ("Dubai",16,'bold')
+footer_font = ("Dubai",10,'bold')
 # bg_img = PhotoImage(file="./particle.png")
 
 # lab_background=Label(root, image=bg_img).place(x=0,y=0)
@@ -23,7 +24,7 @@ sub_title = ("Algerian",20,'bold')
 title = Label(text=" مرحبـــا مليزي محمد", font=title_font,bg=win_bg_color,fg=win_font_color).pack()
 # sub title-------------------------------------
 
-sub_title = Label(text="برنامجك لتسجيل الطلبة",bg=win_bg_color,font=sub_title,fg=white_c).pack()
+sub_title = Label(text="برنامجك لمتابعة تسجيلات الطلبة",bg=win_bg_color,font=sub_title,fg=white_c).pack()
 
 
 #=== footer =====================================================================
