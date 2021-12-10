@@ -8,7 +8,7 @@ red_c = "#F35D5D"
 purple_c = "#B281FD"
 #fonts--------------------------
 title_font = ("Dubai",48,'bold')
-sub_title = ("Dubai",16,'bold')
+sub_title_font = ("Dubai",16,'bold')
 footer_font = ("Dubai",10,'bold')
 btn_font = ("Dubai",16,'bold')
 
@@ -31,7 +31,7 @@ root['background'] = win_bg_color
 title = Label(text=" مرحبـــا مليزي محمد", font=title_font,bg=win_bg_color,fg=grey_c).pack()
 # sub title-------------------------------------
 
-sub_title = Label(text="برنامجك لمتابعة تسجيلات الطلبة",bg=win_bg_color,font=sub_title,fg=white_c).pack()
+sub_title = Label(text="برنامجك لمتابعة تسجيلات الطلبة",bg=win_bg_color,font=sub_title_font,fg=white_c).pack()
 
 # container -------------------------------------
 
