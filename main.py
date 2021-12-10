@@ -1,12 +1,16 @@
 from tkinter import *
-from tkinter import font
+#colors
+win_bg_color = '#3CCBF7'
+win_font_color = "#2C2626"
+white_c = '#fff'
+green_c = "#13DF8D"
+red_c = "#F35D5D"
+
+
 root = Tk()
 root.title("برنامج الأستاذ مليزي محمد")
 root.configure(padx=40,pady=20)
 root.geometry('800x800+0+0')
-win_bg_color = '#018cb6'
-win_font_color = "#333"
-white_c = '#fcfcfc'
 root['background'] = win_bg_color
 
 
@@ -26,10 +30,24 @@ title = Label(text=" مرحبـــا مليزي محمد", font=title_font,bg=w
 
 sub_title = Label(text="برنامجك لمتابعة تسجيلات الطلبة",bg=win_bg_color,font=sub_title,fg=white_c).pack()
 
+# container -------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #=== footer =====================================================================
 footer_txt = Label(text=" من إنحاز مليزي خالد و مليزي ياسمين",bg=win_bg_color,fg=white_c).pack(side=BOTTOM)
 
-print(font.families())
 
 root.mainloop()
