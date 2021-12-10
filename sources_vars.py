@@ -10,4 +10,5 @@ title_font = ("Dubai",48,'bold')
 sub_title_font = ("Dubai",16,'bold')
 footer_font = ("Dubai",10,'bold')
 btn_font = ("Dubai",16,'bold')
+standard_font = ("Dubai",14,'normal')
 # -------------------------------------------------------
