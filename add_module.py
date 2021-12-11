@@ -1,8 +1,17 @@
 from tkinter import *
 from sources_vars import *
+
 add_win = Tk()
 add_win.geometry("800x800+0+0")
 add_win["background"] = win_bg_color
+
+first_name = StringVar()
+last_name = StringVar()
+level = StringVar()
+branch = StringVar()
+location = StringVar()
+branch = StringVar()
+pay = IntVar()
 add_win.title('مليزي محمد                                      إضافة طالب')
 #------ title -------------------------------------
 title_add = Label(text="برنامجك في خدمتك",fg=grey_c,bg=win_bg_color,font=title_font).pack()
@@ -14,13 +23,13 @@ title_add = Label(text=" إضافـــــة طلبـــة ",fg=white_c,bg=win
 frame_f_name = Frame()
 frame_f_name.place(x=610,y=200)
 f_name_label = Label(frame_f_name,text=":الإسم",font=standard_font).pack()
-f_name_input = Entry(frame_f_name,borderwidth=15,relief=FLAT,font=standard_font,justify=CENTER,width=12).pack()
+f_name_input = Entry(frame_f_name,borderwidth=15,relief=FLAT,font=standard_font,justify=CENTER,width=12,textvariable=first_name).pack()
 
 #--last_name---
 frame_l_name = Frame()
 frame_l_name.place(x=400,y=200)
 l_name_label = Label(frame_l_name,text=":اللقب",font=standard_font).pack()
-l_name_input = Entry(frame_l_name,borderwidth=15,relief=FLAT,font=standard_font,justify=CENTER,width=12).pack()
+l_name_input = Entry(frame_l_name,borderwidth=15,relief=FLAT,font=standard_font,justify=CENTER,width=12,textvariable=last_name).pack()
 
 
 #--level---
@@ -35,14 +44,14 @@ level_input.pack()
 
 
 #--branch---
-perfection = Frame()
-perfection.place(x=40,y=200)
-perfection_label = Label(perfection,text=":الشعبة",font=standard_font).pack()
-perfection_input = Listbox(perfection,justify=CENTER,font=standard_font,width=13,height=2,selectbackground='red',cursor='hand2')
-perfection_input.insert(1," تقني رياضي")
-perfection_input.insert(2," علوم تجريبية")
-perfection_input.insert(3," ج مشترك علوم ")
-perfection_input.pack()
+department = Frame()
+department.place(x=40,y=200)
+department_label = Label(department,text=":الشعبة",font=standard_font).pack()
+department_input = Listbox(department,justify=CENTER,font=standard_font,width=13,height=2,selectbackground='red',cursor='hand2')
+department_input.insert(1," تقني رياضي")
+department_input.insert(2," علوم تجريبية")
+department_input.insert(3," ج مشترك علوم ")
+department_input.pack()
 
 
 #--address---
